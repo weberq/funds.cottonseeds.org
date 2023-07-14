@@ -1,388 +1,1092 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Pranay Funds</title>
+    <meta charset="utf-8" />
+    <title>Pranay Funds Bank</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
     <meta
       name="description"
       content="Experience a new kind of banking with Pranay Funds. Our no-loss policy ensures your investments are always protected while you earn high returns. Start investing today."
     />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="cottonseeds.org" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- favicons  -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="assets/favicons/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="assets/favicons/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="assets/favicons/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="assets/favicons/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="assets/favicons/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="assets/favicons/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="assets/favicons/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="assets/favicons/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicons/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="assets/favicons/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="assets/favicons/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/favicons/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="assets/favicons/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
-  </head>
-  <body>
-    <!-- notification for small viewports and landscape oriented smartphones -->
-    <div class="device-notification">
-      <a class="device-notification--logo" href="#0">
-        <img src="assets/img/logo.png" style="width: 30px" alt="Global" />
-        <p>Pranay Funds</p>
-      </a>
-      <p class="device-notification--message">
-        Pranay Funds has so much to offer that we must request you orient your
-        device to portrait or find a larger screen. You won't be disappointed.
-      </p>
-    </div>
 
-    <div class="perspective effect-rotate-left">
-      <div class="container">
-        <div class="outer-nav--return"></div>
-        <div id="viewport" class="l-viewport">
-          <div class="l-wrapper">
-            <header class="header">
-              <a class="header--logo" href="#0">
-                <img
-                  src="assets/img/logo.png"
-                  style="width: 30px"
-                  alt="Global"
-                />
-                <p>Pranay Funds</p>
-              </a>
-              <button class="header--cta cta">Invest Now</button>
-              <div class="header--nav-toggle">
-                <span></span>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-grow text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+
+      <!-- Navbar & Hero Start -->
+      <div class="container-xxl position-relative p-0" id="home">
+        <nav
+          class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+        >
+          <a href="" class="navbar-brand p-0">
+            <h1 class="m-0">Pranay Funds</h1>
+            <!-- <img src="img/logo.png" alt="Logo"> -->
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto py-0">
+              <a href="#home" class="nav-item nav-link active">Home</a>
+              <a href="#about" class="nav-item nav-link">About</a>
+              <a href="#feature" class="nav-item nav-link">Feature</a>
+              <!-- <a href="#pricing" class="nav-item nav-link">Pricing</a>
+              <a href="#review" class="nav-item nav-link">Review</a>
+              <a href="#contact" class="nav-item nav-link">Contact</a> -->
+            </div>
+            <a
+              href="#download"
+              class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
+              >Download</a
+            >
+          </div>
+        </nav>
+
+        <div class="container-xxl bg-primary hero-header">
+          <div class="container px-lg-5">
+            <div class="row g-5">
+              <div class="col-lg-8 text-center text-lg-start">
+                <h1 class="text-white mb-4 animated slideInDown">
+                  Empowering Investors With High Returns
+                </h1>
+                <p class="text-white pb-3 animated slideInDown">
+                  Empowering Investors, Delivering High Returns. Experience
+                  financial growth and stability with our trusted bank. Maximize
+                  your investment potential and seize new opportunities. Join us
+                  today for a world of financial possibilities.
+                </p>
+                <a
+                  href=""
+                  class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft"
+                  >Read More</a
+                >
+                <a
+                  href="#download"
+                  class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight"
+                  >Download</a
+                >
               </div>
-            </header>
-            <nav class="l-side-nav">
-              <ul class="side-nav">
-                <li class="is-active"><span>Home</span></li>
-                <li><span>Perks</span></li>
-                <li><span>About</span></li>
-                <li><span>Contact</span></li>
-              </ul>
-            </nav>
-            <ul class="l-main-content main-content">
-              <li class="l-section section section--is-active">
-                <div class="intro">
-                  <div class="intro--banner">
-                    <h1>No Doubts<br />No Downs<br /></h1>
-                    <button class="cta">
-                      Invest Now
-                      <svg
-                        version="1.1"
-                        id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px"
-                        y="0px"
-                        viewBox="0 0 150 118"
-                        style="enable-background: new 0 0 150 118"
-                        xml:space="preserve"
-                      >
-                        <g
-                          transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)"
-                        >
-                          <path
-                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"
-                          />
-                        </g>
-                      </svg>
-                      <span class="btn-background"></span>
-                    </button>
-                    <img
-                      src="assets/img/intro.png"
-                      alt="Welcome"
-                      style="height: 511px"
-                    />
-                  </div>
-                  <div class="intro--options">
-                    <a href="#0">
-                      <h3>High Returns</h3>
-                      <p>
-                        Don't settle for mediocre returns - join us and
-                        experience high returns today!
-                      </p>
-                    </a>
-                    <a href="#0">
-                      <h3>No Loss Policy</h3>
-                      <p>
-                        Take the risk out of investing with our guaranteed
-                        no-loss policy.
-                      </p>
-                    </a>
-                    <a href="#0">
-                      <h3>Withdraw Anytime</h3>
-                      <p>
-                        Life is unpredictable, but your investments don't have
-                        to be. Withdraw your money anytime, anywhere.
-                      </p>
-                    </a>
-                  </div>
+              <div
+                class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
+                data-wow-delay="0.3s"
+              >
+                <div class="owl-carousel screenshot-carousel">
+                  <img class="img-fluid" src="img/home.png" alt="" />
+                  <img class="img-fluid" src="img/investments.png" alt="" />
+                  <img class="img-fluid" src="img/chitfunds.png" alt="" />
+                  <img class="img-fluid" src="img/profile.png" alt="" />
+                  <img class="img-fluid" src="img/login.png" alt="" />
                 </div>
-              </li>
-              <li class="l-section section">
-                <div class="work">
-                  <h2>Our Perks</h2>
-                  <div class="work--lockup">
-                    <ul class="slider">
-                      <li class="slider--item slider--item-left">
-                        <a href="#0">
-                          <div class="slider--item-image">
-                            <img src="assets/img/high.jpg" alt="Victory" />
-                          </div>
-                          <p class="slider--item-title">High Returns</p>
-                          <p class="slider--item-description">
-                            Don't settle for mediocre returns - join us and
-                            experience high returns today!
-                          </p>
-                        </a>
-                      </li>
-                      <li class="slider--item slider--item-center">
-                        <a href="#0">
-                          <div class="slider--item-image">
-                            <img
-                              src="assets/img/noloss.jpg"
-                              alt="Metiew and Smith"
-                            />
-                          </div>
-                          <p class="slider--item-title">No Loss Policy</p>
-                          <p class="slider--item-description">
-                            Take the risk out of investing with our guaranteed
-                            no-loss policy.
-                          </p>
-                        </a>
-                      </li>
-                      <li class="slider--item slider--item-right">
-                        <a href="#0">
-                          <div class="slider--item-image">
-                            <img
-                              src="assets/img/anytime.jpg"
-                              alt="Alex Nowak"
-                            />
-                          </div>
-                          <p class="slider--item-title">Withdraw Anytime</p>
-                          <p class="slider--item-description">
-                            Life is unpredictable, but your investments don't
-                            have to be. Withdraw your money anytime, anywhere.
-                          </p>
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="slider--prev">
-                      <svg
-                        version="1.1"
-                        id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px"
-                        y="0px"
-                        viewBox="0 0 150 118"
-                        style="enable-background: new 0 0 150 118"
-                        xml:space="preserve"
-                      >
-                        <g
-                          transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)"
-                        >
-                          <path
-                            d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"
-                          />
-                        </g>
-                      </svg>
-                    </div>
-                    <div class="slider--next">
-                      <svg
-                        version="1.1"
-                        id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px"
-                        y="0px"
-                        viewBox="0 0 150 118"
-                        style="enable-background: new 0 0 150 118"
-                        xml:space="preserve"
-                      >
-                        <g
-                          transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)"
-                        >
-                          <path
-                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"
-                          />
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="l-section section">
-                <div class="about">
-                  <div class="about--banner">
-                    <!-- <h2>We<br />believe in<br />passionate<br />people</h2> -->
-                    <h2>
-                      Empowering<br />
-                      investors<br />
-                      with high<br />
-                      returns
-                    </h2>
-                    <a
-                      href="terms-of-service.html"
-                      class="button button--primary"
-                      >Policies
-                      <span>
-                        <svg
-                          version="1.1"
-                          id="Layer_1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          x="0px"
-                          y="0px"
-                          viewBox="0 0 150 118"
-                          style="enable-background: new 0 0 150 118"
-                          xml:space="preserve"
-                        >
-                          <g
-                            transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)"
-                          >
-                            <path
-                              d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"
-                            />
-                          </g>
-                        </svg>
-                      </span>
-                    </a>
-                    <img src="assets/img/about-visual.png" alt="About Us" />
-                  </div>
-                  <!-- <div class="about--options">
-                    <a href="#0">
-                      <h3>Winners</h3>
-                    </a>
-                    <a href="#0">
-                      <h3>Philosophy</h3>
-                    </a>
-                    <a href="#0">
-                      <h3>History</h3>
-                    </a>
-                  </div> -->
-                </div>
-              </li>
-              <li class="l-section section">
-                <div class="contact">
-                  <div class="contact--lockup">
-                    <div class="modal">
-                      <div class="modal--information">
-                        <p>Ft No. 25/24, Bowrampet,Telangana,500043</p>
-                        <a href="mailto:reach@cottonseeds.org"
-                          >reach@cottonseeds.org</a
-                        >
-                        <!-- <a href="tel:+919676504452">+48 12 628 75 60</a> -->
-                      </div>
-                      <ul class="modal--options">
-                        <li>
-                          <a href="https://twitter.com/cottonseedsorg"
-                            >Twitter</a
-                          >
-                        </li>
-                        <li>
-                          <a href="https://www.instagram.com/cottonseedsorg/"
-                            >Instagram</a
-                          >
-                        </li>
-                        <li>
-                          <a href="mailto:reach@cottonseeds.org">Contact Us</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <ul class="outer-nav">
-        <li class="is-active">Home</li>
-        <li>Works</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+      <!-- Navbar & Hero End -->
+
+      <!-- About Start -->
+      <div class="container-xxl py-5" id="about">
+        <div class="container py-5 px-lg-5">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+              <h5 class="text-primary-gradient fw-medium">About App</h5>
+              <h1 class="mb-4">
+                Unleash Your Financial Potential with Pranay Funds
+              </h1>
+              <p class="mb-4">
+                Empowering Your Finances. Instant access, no loss policy, high
+                returns. Join us for a secure and flexible banking experience.
+                Start your financial journey today.
+              </p>
+              <div class="row g-4 mb-4">
+                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                  <div class="d-flex">
+                    <i
+                      class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"
+                    ></i>
+                    <div class="ms-3">
+                      <h2 class="mb-0" data-toggle="counter-up">30</h2>
+                      <!-- <span class="text-primary-gradient">+</span> -->
+                      <p class="text-primary-gradient mb-0">Active Install</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                  <div class="d-flex">
+                    <i
+                      class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"
+                    ></i>
+                    <div class="ms-3">
+                      <h2 class="mb-0" data-toggle="counter-up">332</h2>
+                      <p class="text-secondary-gradient mb-0">Customers</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                href="#download"
+                class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3"
+                >Download</a
+              >
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="img-fluid wow fadeInUp"
+                data-wow-delay="0.5s"
+                src="img/about.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About End -->
+
+      <!-- Features Start -->
+      <div class="container-xxl py-5" id="feature">
+        <div class="container py-5 px-lg-5">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="text-primary-gradient fw-medium">App Features</h5>
+            <h1 class="mb-5">Awesome Perks Of Pranay Funds</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="feature-item bg-light rounded p-4">
+                <div
+                  class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="fa fa-layer-group text-white fs-4"></i>
+                </div>
+                <h5 class="mb-3">High Returns</h5>
+                <p class="m-0">
+                  Don't settle for mediocre returns - join us and experience
+                  high returns today!
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="feature-item bg-light rounded p-4">
+                <div
+                  class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="fa fa-shield-alt text-white fs-4"></i>
+                </div>
+                <h5 class="mb-3">No Loss Policy</h5>
+                <p class="m-0">
+                  Take the risk out of investing with our guaranteed no-loss
+                  policy.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="feature-item bg-light rounded p-4">
+                <div
+                  class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="fa fa-mobile-alt text-white fs-4"></i>
+                </div>
+                <h5 class="mb-3">Withdraw Anytime</h5>
+                <p class="m-0">
+                  Life is unpredictable, but your investments don't have to be.
+                  Withdraw your money anytime, anywhere.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Features End -->
+
+      <!-- Screenshot Start -->
+      <div class="container-xxl py-5">
+        <div class="container py-5 px-lg-5">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+              <h5 class="text-primary-gradient fw-medium">Screenshot</h5>
+              <h1 class="mb-4">
+                User Friendly interface And Very Easy To Use Banking App
+              </h1>
+              <p class="mb-4">
+                Experience the ease and convenience of our user-friendly
+                interface, designed to make banking effortless and intuitive.
+                With Pranay Funds, managing your finances has never been easier.
+              </p>
+              <p>
+                <i class="fa fa-check text-primary-gradient me-3"></i>Intuitive
+                Interface: Effortlessly navigate through our user-friendly
+                interface.
+              </p>
+              <p>
+                <i class="fa fa-check text-primary-gradient me-3"></i
+                >Streamlined Operations: Perform financial transactions quickly
+                and efficiently.
+              </p>
+              <p class="mb-4">
+                <i class="fa fa-check text-primary-gradient me-3"></i>Enhanced
+                Accessibility: Experience inclusive and convenient banking for
+                all.
+              </p>
+              <a
+                href="#download"
+                class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3"
+                >Download</a
+              >
+            </div>
+            <div
+              class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <div class="owl-carousel screenshot-carousel">
+                <img class="img-fluid" src="img/home.png" alt="" />
+                <img class="img-fluid" src="img/investments.png" alt="" />
+                <img class="img-fluid" src="img/chitfunds.png" alt="" />
+                <img class="img-fluid" src="img/profile.png" alt="" />
+                <img class="img-fluid" src="img/login.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Screenshot End -->
+
+      <!-- Process Start -->
+      <div class="container-xxl py-5">
+        <div class="container py-5 px-lg-5">
+          <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="text-primary-gradient fw-medium">How It Works</h5>
+            <h1 class="mb-5">3 Easy Steps</h1>
+          </div>
+          <div class="row gy-5 gx-4 justify-content-center">
+            <div
+              class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                <div
+                  class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                  style="width: 100px; height: 100px"
+                >
+                  <i class="fa fa-cog fa-3x text-white"></i>
+                </div>
+                <h5 class="mt-4 mb-3">Install the App</h5>
+                <p class="mb-0">
+                  Download and install the Pranay Funds app from your preferred
+                  app store. Gain instant access to a world of financial
+                  possibilities right at your fingertips.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                <div
+                  class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                  style="width: 100px; height: 100px"
+                >
+                  <i class="fa fa-address-card fa-3x text-white"></i>
+                </div>
+                <h5 class="mt-4 mb-3">Create Account</h5>
+                <p class="mb-0">
+                  Sign up and create your Pranay Funds account in just a few
+                  simple steps. Enjoy a hassle-free onboarding process and start
+                  managing your finances with ease.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp"
+              data-wow-delay="0.5s"
+            >
+              <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                <div
+                  class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                  style="width: 100px; height: 100px"
+                >
+                  <i class="fa fa-check fa-3x text-white"></i>
+                </div>
+                <h5 class="mt-4 mb-3">Happy Banking</h5>
+                <p class="mb-0">
+                  Experience the joy of seamless banking with Pranay Funds.
+                  Enjoy convenient transactions, high returns, and a
+                  user-friendly interface that makes banking a delightful
+                  experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Process Start -->
+
+      <!-- Download Start -->
+      <div class="container-xxl py-5" id="download">
+        <div class="container py-5 px-lg-5">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <img
+                class="img-fluid wow fadeInUp"
+                data-wow-delay="0.1s"
+                src="img/about.png"
+              />
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+              <h5 class="text-primary-gradient fw-medium">Download</h5>
+              <h1 class="mb-4">Download The Latest Version Of Our App</h1>
+              <p class="mb-4">
+                Embrace a seamless banking experience by downloading the newest
+                version of the Pranay Funds app. Unlock advanced features,
+                enhanced security, and convenient access to your finances. Stay
+                up-to-date and enjoy the latest innovations for effortless
+                banking on the go.
+              </p>
+              <div class="row g-4">
+                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                  <a
+                    href=""
+                    class="d-flex bg-primary-gradient rounded py-3 px-4"
+                  >
+                    <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
+                    <div class="ms-3">
+                      <p class="text-white mb-0">Available On</p>
+                      <h5 class="text-white mb-0">App Store</h5>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                  <a
+                    href=""
+                    class="d-flex bg-secondary-gradient rounded py-3 px-4"
+                  >
+                    <i
+                      class="fab fa-android fa-3x text-white flex-shrink-0"
+                    ></i>
+                    <div class="ms-3">
+                      <p class="text-white mb-0">Available On</p>
+                      <h5 class="text-white mb-0">Play Store</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Download End -->
+
+      <!-- Pricing Start -->
+      <!-- <div class="container-xxl py-5" id="pricing">
+        <div class="container py-5 px-lg-5">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="text-primary-gradient fw-medium">Pricing Plan</h5>
+            <h1 class="mb-5">Choose Your Plan</h1>
+          </div>
+          <div
+            class="tab-class text-center pricing wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <ul
+              class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5"
+            >
+              <li class="nav-item">
+                <button
+                  class="nav-link active"
+                  data-bs-toggle="pill"
+                  href="#tab-1"
+                >
+                  Monthly
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" href="#tab-2">
+                  Yearly
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content text-start">
+              <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div class="row g-4">
+                  <div class="col-lg-4">
+                    <div class="bg-light rounded">
+                      <div class="border-bottom p-4 mb-4">
+                        <h4 class="text-primary-gradient mb-1">Starter Plan</h4>
+                        <span>Powerful & Awesome Features</span>
+                      </div>
+                      <div class="p-4 pt-0">
+                        <h1 class="mb-3">
+                          <small
+                            class="align-top"
+                            style="font-size: 22px; line-height: 45px"
+                            >$</small
+                          >14.99<small
+                            class="align-bottom"
+                            style="font-size: 16px; line-height: 40px"
+                            >/ Month</small
+                          >
+                        </h1>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>HTML5 & CSS3</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>Bootstrap v5</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>Responsive Layout</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <span>Cross-browser Support</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <a
+                          href=""
+                          class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4"
+                          >Get Started</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="bg-light rounded border">
+                      <div class="border-bottom p-4 mb-4">
+                        <h4 class="text-primary-gradient mb-1">Advance Plan</h4>
+                        <span>Powerful & Awesome Features</span>
+                      </div>
+                      <div class="p-4 pt-0">
+                        <h1 class="mb-3">
+                          <small
+                            class="align-top"
+                            style="font-size: 22px; line-height: 45px"
+                            >$</small
+                          >24.99<small
+                            class="align-bottom"
+                            style="font-size: 16px; line-height: 40px"
+                            >/ Month</small
+                          >
+                        </h1>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>HTML5 & CSS3</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>Bootstrap v5</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>Responsive Layout</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <span>Cross-browser Support</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <a
+                          href=""
+                          class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4"
+                          >Get Started</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="bg-light rounded">
+                      <div class="border-bottom p-4 mb-4">
+                        <h4 class="text-primary-gradient mb-1">Premium Plan</h4>
+                        <span>Powerful & Awesome Features</span>
+                      </div>
+                      <div class="p-4 pt-0">
+                        <h1 class="mb-3">
+                          <small
+                            class="align-top"
+                            style="font-size: 22px; line-height: 45px"
+                            >$</small
+                          >34.99<small
+                            class="align-bottom"
+                            style="font-size: 16px; line-height: 40px"
+                            >/ Month</small
+                          >
+                        </h1>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>HTML5 & CSS3</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>Bootstrap v5</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>Responsive Layout</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <span>Cross-browser Support</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <a
+                          href=""
+                          class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4"
+                          >Get Started</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-2" class="tab-pane fade p-0">
+                <div class="row g-4">
+                  <div class="col-lg-4">
+                    <div class="bg-light rounded">
+                      <div class="border-bottom p-4 mb-4">
+                        <h4 class="text-primary-gradient mb-1">Starter Plan</h4>
+                        <span>Powerful & Awesome Features</span>
+                      </div>
+                      <div class="p-4 pt-0">
+                        <h1 class="mb-3">
+                          <small
+                            class="align-top"
+                            style="font-size: 22px; line-height: 45px"
+                            >$</small
+                          >114.99<small
+                            class="align-bottom"
+                            style="font-size: 16px; line-height: 40px"
+                            >/ Yearly</small
+                          >
+                        </h1>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>HTML5 & CSS3</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>Bootstrap v5</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>Responsive Layout</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <span>Cross-browser Support</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <a
+                          href=""
+                          class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4"
+                          >Get Started</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="bg-light rounded border">
+                      <div class="border-bottom p-4 mb-4">
+                        <h4 class="text-primary-gradient mb-1">Advance Plan</h4>
+                        <span>Powerful & Awesome Features</span>
+                      </div>
+                      <div class="p-4 pt-0">
+                        <h1 class="mb-3">
+                          <small
+                            class="align-top"
+                            style="font-size: 22px; line-height: 45px"
+                            >$</small
+                          >124.99<small
+                            class="align-bottom"
+                            style="font-size: 16px; line-height: 40px"
+                            >/ Yearly</small
+                          >
+                        </h1>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>HTML5 & CSS3</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>Bootstrap v5</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>Responsive Layout</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <span>Cross-browser Support</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <a
+                          href=""
+                          class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4"
+                          >Get Started</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="bg-light rounded">
+                      <div class="border-bottom p-4 mb-4">
+                        <h4 class="text-primary-gradient mb-1">Premium Plan</h4>
+                        <span>Powerful & Awesome Features</span>
+                      </div>
+                      <div class="p-4 pt-0">
+                        <h1 class="mb-3">
+                          <small
+                            class="align-top"
+                            style="font-size: 22px; line-height: 45px"
+                            >$</small
+                          >134.99<small
+                            class="align-bottom"
+                            style="font-size: 16px; line-height: 40px"
+                            >/ Yearly</small
+                          >
+                        </h1>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>HTML5 & CSS3</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>Bootstrap v5</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>Responsive Layout</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <span>Cross-browser Support</span
+                          ><i
+                            class="fa fa-check text-primary-gradient pt-1"
+                          ></i>
+                        </div>
+                        <a
+                          href=""
+                          class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4"
+                          >Get Started</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- Pricing End -->
+
+      <!-- Testimonial Start -->
+      <!-- <div class="container-xxl py-5" id="review">
+        <div class="container py-5 px-lg-5">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="text-primary-gradient fw-medium">Testimonial</h5>
+            <h1 class="mb-5">What Say Our Clients!</h1>
+          </div>
+          <div
+            class="owl-carousel testimonial-carousel wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="testimonial-item rounded p-4">
+              <div class="d-flex align-items-center mb-4">
+                <img
+                  class="img-fluid bg-white rounded flex-shrink-0 p-1"
+                  src="img/testimonial-1.jpg"
+                  style="width: 85px; height: 85px"
+                />
+                <div class="ms-4">
+                  <h5 class="mb-1">Client Name</h5>
+                  <p class="mb-1">Profession</p>
+                  <div>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-0">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+                amet diam et eos. Clita erat ipsum et lorem et sit.
+              </p>
+            </div>
+            <div class="testimonial-item rounded p-4">
+              <div class="d-flex align-items-center mb-4">
+                <img
+                  class="img-fluid bg-white rounded flex-shrink-0 p-1"
+                  src="img/testimonial-2.jpg"
+                  style="width: 85px; height: 85px"
+                />
+                <div class="ms-4">
+                  <h5 class="mb-1">Client Name</h5>
+                  <p class="mb-1">Profession</p>
+                  <div>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-0">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+                amet diam et eos. Clita erat ipsum et lorem et sit.
+              </p>
+            </div>
+            <div class="testimonial-item rounded p-4">
+              <div class="d-flex align-items-center mb-4">
+                <img
+                  class="img-fluid bg-white rounded flex-shrink-0 p-1"
+                  src="img/testimonial-3.jpg"
+                  style="width: 85px; height: 85px"
+                />
+                <div class="ms-4">
+                  <h5 class="mb-1">Client Name</h5>
+                  <p class="mb-1">Profession</p>
+                  <div>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-0">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+                amet diam et eos. Clita erat ipsum et lorem et sit.
+              </p>
+            </div>
+            <div class="testimonial-item rounded p-4">
+              <div class="d-flex align-items-center mb-4">
+                <img
+                  class="img-fluid bg-white rounded flex-shrink-0 p-1"
+                  src="img/testimonial-4.jpg"
+                  style="width: 85px; height: 85px"
+                />
+                <div class="ms-4">
+                  <h5 class="mb-1">Client Name</h5>
+                  <p class="mb-1">Profession</p>
+                  <div>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                    <small class="fa fa-star text-warning"></small>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-0">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+                amet diam et eos. Clita erat ipsum et lorem et sit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- Testimonial End -->
+
+      <!-- Contact Start -->
+      <!-- <div class="container-xxl py-5" id="contact">
+        <div class="container py-5 px-lg-5">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
+            <h1 class="mb-5">Get In Touch!</h1>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+              <div class="wow fadeInUp" data-wow-delay="0.3s">
+                <p class="text-center mb-4">
+                  The contact form is currently inactive. Get a functional and
+                  working contact form with Ajax & PHP in a few minutes. Just
+                  copy and paste the files, add a little code and you're done.
+                  <a href="https://htmlcodex.com/contact-form">Download Now</a>.
+                </p>
+                <form>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your Name"
+                        />
+                        <label for="name">Your Name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="Your Email"
+                        />
+                        <label for="email">Your Email</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="subject"
+                          placeholder="Subject"
+                        />
+                        <label for="subject">Subject</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          placeholder="Leave a message here"
+                          id="message"
+                          style="height: 150px"
+                        ></textarea>
+                        <label for="message">Message</label>
+                      </div>
+                    </div>
+                    <div class="col-12 text-center">
+                      <button
+                        class="btn btn-primary-gradient rounded-pill py-3 px-5"
+                        type="submit"
+                      >
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- Contact End -->
+
+      <!-- Footer Start -->
+      <div
+        class="container-fluid bg-primary text-light footer wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <div class="container py-5 px-lg-5">
+          <div class="row g-5">
+            <div class="col-md-6 col-lg-3">
+              <h4 class="text-white mb-4">Address</h4>
+              <p>
+                <i class="fa fa-map-marker-alt me-3"></i>Ft No. 25/24,
+                Bowrampet,Telangana,500043
+              </p>
+              <!-- <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p> -->
+              <p><i class="fa fa-envelope me-3"></i>funds@cottonseeds.org</p>
+              <div class="d-flex pt-2">
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h4 class="text-white mb-4">Quick Link</h4>
+              <a class="btn btn-link" href="">About Us</a>
+              <!-- <a class="btn btn-link" href="">Contact Us</a> -->
+              <a class="btn btn-link" href="privacy-policy.html"
+                >Privacy Policy</a
+              >
+              <a class="btn btn-link" href="terms-of-service.html"
+                >Terms & Condition</a
+              >
+              <a class="btn btn-link" href="https://interview.cottonseeds.org"
+                >Career</a
+              >
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h4 class="text-white mb-4">Popular Link</h4>
+              <a class="btn btn-link" href="">About Us</a>
+              <!-- <a class="btn btn-link" href="">Contact Us</a> -->
+              <a class="btn btn-link" href="privacy-policy.html"
+                >Privacy Policy</a
+              >
+              <a class="btn btn-link" href="terms-of-service.html"
+                >Terms & Condition</a
+              >
+              <a class="btn btn-link" href="https://interview.cottonseeds.org"
+                >Career</a
+              >
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h4 class="text-white mb-4">Newsletter</h4>
+              <p>
+                Subscribe to our newsletter and stay up-to-date with the latest
+                news, offers, and financial insights from Pranay Funds.
+              </p>
+              <div class="position-relative w-100 mt-3">
+                <input
+                  class="form-control border-0 rounded-pill w-100 ps-4 pe-5"
+                  type="text"
+                  placeholder="Your Email"
+                  style="height: 48px"
+                />
+                <button
+                  type="button"
+                  class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
+                >
+                  <i class="fa fa-paper-plane text-primary-gradient fs-4"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container px-lg-5">
+          <div class="copyright">
+            <div class="row">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <a class="border-bottom" href="#">Pranay Funds</a>, All
+                Right Reserved.
+
+                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                Designed By
+                <a class="border-bottom" href="https://htmlcodex.com"
+                  >HTML Codex</a
+                >
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                <div class="footer-menu">
+                  <a href="">Home</a>
+                  <a href="">Cookies</a>
+                  <a href="">Help</a>
+                  <a href="">FQAs</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"
+        ><i class="bi bi-arrow-up text-white"></i
+      ></a>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>
-      window.jQuery ||
-        document.write(
-          '<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>'
-        );
-    </script>
-    <script src="assets/js/functions-min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
   </body>
 </html>
