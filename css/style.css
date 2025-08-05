@@ -338,3 +338,53 @@ h1,h2,h3,h4,h5,h6 {
 .footer .footer-menu a:last-child {
   border: none;
 }
+/**********
+Download Page Specific Styles
+**********/
+
+.hero-header-download {
+    background-color: var(--m3-surface-container-low);
+    border-bottom: 1px solid var(--m3-outline);
+}
+
+.release-card-m3 {
+    background-color: var(--m3-surface-container);
+    border: 1px solid var(--m3-outline);
+    border-radius: 24px;
+    padding: 2rem;
+    height: 100%;
+    transition: box-shadow 0.3s ease;
+}
+
+.release-card-m3:hover {
+    box-shadow: 0 8px 24px -4px rgba(0,0,0,0.12);
+}
+
+.release-card-m3 h4 {
+    color: var(--m3-primary);
+}
+
+.release-card-m3 .changelog {
+    background-color: var(--m3-surface-container-lowest);
+    border-radius: 16px;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+}
+
+.release-card-m3 .changelog h6 {
+    font-weight: 700;
+    color: var(--m3-on-surface);
+    margin-bottom: 0.75rem;
+}
+
+.release-card-m3 .changelog ul {
+    list-style-type: '✓  ';
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+    color: var(--m3-on-surface-variant);
+}
+
+.release-card-m3 .changelog ul li {
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
